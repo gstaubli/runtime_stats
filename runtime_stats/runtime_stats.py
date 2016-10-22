@@ -52,21 +52,3 @@ def runtime_stats():
 		wrapper.get_all_runtime_stats = get_all_runtime_stats
 		return wrapper
 	return decorating_function
-
-@runtime_stats()
-def self_mult(n):
-    sleep(0.2)
-    return n*n
-
-@runtime_stats()
-def self_add(n):
-    sleep(0.2)
-    return n+n
-
-print(self_mult(10)) # => 100
-print(self_mult(7)) # => 49
-print(self_mult.get_func_runtime_stats())
-
-print(self_add(10)) # => 100
-print(self_add(7)) # => 49
-print(self_add.get_func_runtime_stats())

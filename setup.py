@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='runtime_stats',
-    version='0.1.0',
+    version='0.1.2',
     author='Garren Staubli',
     author_email='gstaubli@gmail.com',
     packages=['runtime_stats'],
